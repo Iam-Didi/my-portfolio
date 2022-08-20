@@ -381,7 +381,7 @@ footer p:nth-child(2){
     }
     .hero{
         height: 100vh;
-        width: 500px;
+        width: 288px;
         background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./didi.jpg);
         background-size: cover;
         background-position: center;
@@ -393,7 +393,7 @@ footer p:nth-child(2){
         background-size: cover;
         background-position: center;
         height: 100vh;
-        width: 500%;
+        width: 288px;
         padding-right: 50px;
         position: relative;
     }
@@ -411,7 +411,7 @@ footer p:nth-child(2){
 
     .logo{
         color: white;
-        font-size: 21px;
+        font-size: 10px;
         letter-spacing: 1px;
         cursor: pointer;
     
@@ -430,7 +430,7 @@ footer p:nth-child(2){
         text-decoration: red;
         font-weight: bold;
         text-transform: capitalize;
-        font-size: 10px;
+        font-size: 6px;
     }
     
     nav ul li a:hover{
@@ -449,10 +449,10 @@ footer p:nth-child(2){
         border: 1px solid transparent;
         border-radius: 30px;
         font-weight: bold;
-        padding: 4px 1px;
+        padding: 3px 1px;
         text-transform: capitalize;
         transition: transform .10s;
-        font-size: 12px;
+        font-size: 9px;
     }
     
     .btn:hover{
@@ -472,22 +472,22 @@ footer p:nth-child(2){
     h1{
         color: white;
         margin: 30px 0px 30px;
-        font-size: 35px;
+        font-size: 29px;
     }
     
     h3{
         color: white;
-        font-size: 15px;
+        font-size: 10px;
         margin-bottom: 25px;
     }
     
     h4{
         color: #fcfc;
         letter-spacing: 9px;
-        font-size: 30px;
+        font-size: 14px;
     }
     .newsletter form{
-        width: 400px;
+        width: 200px;
         max-width: 1000px;
         position: relative;
     }
@@ -521,15 +521,15 @@ footer p:nth-child(2){
     
     }
     .about{
-        width: 500px;
+        width: 288px;
         padding: 100px 0px;
         background-color: #191919;
         
     }
     
     .about img{
-        height: 100px 100px;
-        width: 50px;
+        height: 200px 200px;
+        width: 130px;
         padding-right: 10px;
     }
     
@@ -548,7 +548,7 @@ footer p:nth-child(2){
     
     .about-text h2{
         color: white;
-        font-size: 60px;
+        font-size: 15px;
         text-transform: capitalize;
         margin-bottom: 5px;
     }
@@ -556,7 +556,7 @@ footer p:nth-child(2){
     .about-text h5{
         color: white;
         letter-spacing: 0px;
-        font-size: 15px;
+        font-size: 8px;
         margin-bottom: 10px;
         text-transform: capitalize;
     }
@@ -564,8 +564,8 @@ footer p:nth-child(2){
     .about-text p{
         color: #fcfc;
         letter-spacing: 0px;
-        line-height: 25px;
-        font-size: 10px;
+        line-height: 20px;
+        font-size: 6px;
         margin-bottom: 45px;
         font-weight: bold;
     }
@@ -574,9 +574,9 @@ footer p:nth-child(2){
         background-color: #f9004d;
         color: white;
         text-decoration: none;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         font-weight: bold;
-        padding: 10px 15px;
+        padding: 8px 10px;
         border-radius: 30px;
         transition: .4s;
     }
@@ -591,14 +591,14 @@ footer p:nth-child(2){
     
     .service{
         background-color: #181818;
-        width: 500px;
+        width: 288px;
         padding: 100px 0px;
     }
     
     .title h2{
         color: white;
-        font-size: 40px;
-        width: 450px;
+        font-size: 20px;
+        width: 150px;
         margin: 30px auto;
         text-align: center;
     }
@@ -608,7 +608,7 @@ footer p:nth-child(2){
         justify-content: center;
         align-items: center;
         min-height: 100px;
-        min-width: 400px;
+        min-width: 150px;
        
     }
     
@@ -618,7 +618,7 @@ footer p:nth-child(2){
         padding: 20px 35px;
         background: #191919;
         border-radius: 20px;
-        margin: 15px;
+        margin: 6px;
         position: relative;
         overflow: hidden;
         text-align: center;
@@ -635,15 +635,15 @@ footer p:nth-child(2){
     
     h5{
         color: white;
-        font-size: 12px;
+        font-size: 10px;
         margin-bottom: 15px;
     }
     
     .pra p{
         color: #fcfc;
-        font-size: 9px;
-        line-height: 10px;
-        margin-bottom: 25px;
+        font-size: 5px;
+        line-height: 9px;
+        margin-bottom: 40px;
         
         
     }
@@ -669,7 +669,7 @@ footer p:nth-child(2){
     }
     
     .contact-me{
-        width: 500px;
+        width: 288px;
         height: 300px;
         align-items: center;
         background: #191919;
@@ -680,7 +680,7 @@ footer p:nth-child(2){
     
     .contact-me p{
         color: white;
-        font-size: 20px;
+        font-size: 10px;
         font-weight: 800;
         margin-bottom: 25px;
         
@@ -707,7 +707,7 @@ footer p:nth-child(2){
     
     footer{
         position: relative;
-        width: 500px;
+        width: 288px;
         height: 400px;
         background: #101010;
         display: flex;
@@ -725,7 +725,7 @@ footer p:nth-child(2){
     
     footer p:nth-child(2){
         color: white;
-        font-size: 10px;
+        font-size: 6px;
         width: 400px;
         text-align: center;
         line-height: 26px;
@@ -759,6 +759,6 @@ footer p:nth-child(2){
         position: absolute;
         color: #f9004d;
         bottom: 35px;
-        font-size: 14px; 
+        font-size: 10px; 
     }
 }
