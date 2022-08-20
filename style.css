@@ -371,10 +371,18 @@ footer p:nth-child(2){
 
 
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:288px){
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'josefin Sans', sans-serif;
+        box-sizing: border-box;
+        
+    }
+
     .hero{
         height: 100vh;
-        width: 100%;
+        width: 500px;
         background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./didi.jpg);
         background-size: cover;
         background-position: center;
@@ -386,7 +394,7 @@ footer p:nth-child(2){
         background-size: cover;
         background-position: center;
         height: 100vh;
-        width: 120%;
+        width: 500%;
         padding-right: 50px;
         position: relative;
     }
@@ -476,11 +484,11 @@ footer p:nth-child(2){
     
     h4{
         color: #fcfc;
-        letter-spacing: 6px;
+        letter-spacing: 9px;
         font-size: 30px;
     }
     .newsletter form{
-        width: 380px;
+        width: 400px;
         max-width: 1000px;
         position: relative;
     }
@@ -514,7 +522,7 @@ footer p:nth-child(2){
     
     }
     .about{
-        width: 100%;
+        width: 500px;
         padding: 100px 0px;
         background-color: #191919;
         
@@ -522,7 +530,7 @@ footer p:nth-child(2){
     
     .about img{
         height: 100px 100px;
-        width: 100px;
+        width: 50px;
         padding-right: 10px;
     }
     
@@ -584,7 +592,7 @@ footer p:nth-child(2){
     
     .service{
         background-color: #181818;
-        width: 100%;
+        width: 500px;
         padding: 100px 0px;
     }
     
@@ -662,7 +670,7 @@ footer p:nth-child(2){
     }
     
     .contact-me{
-        width: 100%;
+        width: 500px;
         height: 300px;
         align-items: center;
         background: #191919;
@@ -700,7 +708,7 @@ footer p:nth-child(2){
     
     footer{
         position: relative;
-        width: 100%;
+        width: 500px;
         height: 400px;
         background: #101010;
         display: flex;
