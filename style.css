@@ -1,14 +1,19 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'josefin Sans', sans-serif;
+    font-family: 'Josephin Sans', sans-serif;
     box-sizing: border-box;
-    
 }
+
+/* extra protection to ensure there is no overflow */
+main{
+    overflow-x: hidden !important;
+}
+
 .hero{
     height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./didi.jpg);
+    background-image: url(didi.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -18,7 +23,8 @@ nav{
     justify-content: space-between;
     padding-top: 45px;
     padding-left: 8%;
-    padding-right: 8%; 
+    padding-right: 8%;
+
 }
 .logo{
     color: white;
@@ -26,101 +32,75 @@ nav{
     letter-spacing: 1px;
     cursor: pointer;
 }
-
 span{
     color: #f9004d;
-    
 }
 nav ul li{
-    list-style-type: none;
+    list-style: none;
     display: inline-block;
     padding: 10px 25px;
 }
-
+.fa-solid  {
+    display: none !important;
+}
 nav ul li a{
     color: white;
-    text-decoration: red;
+    text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
-
 nav ul li a:hover{
-    color: palevioletred;
-    transition: .4s;
+    color: #f9004d;
+    transition: 4s;
 }
-
 .btn{
-    background-color: #f9004d;
+    background-color:#f9004d ;
     color: white;
-    text-decoration: wavy;
-    border: 4px solid transparent;
-    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid transparent;
     font-weight: bold;
-    padding: 8px 15px;
-    text-transform: capitalize;
-    transition: transform .10s;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
 }
-
 .btn:hover{
     transform: scale(1.2);
-    
 }
-
-
-section{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./didi.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-}
-
-
-
 .content{
     position: absolute;
     top: 50%;
-    left: 8%;
     transform: translateY(-50%);
+    margin-left: 100px;
 }
-
 h1{
     color: white;
-    margin: 20px 0px 20px;
+    margin:20px 0px 20px ;
     font-size: 75px;
 }
 
 h3{
     color: white;
+    margin-bottom: 50px ;
     font-size: 25px;
-    margin-bottom: 50px;
 }
-
 h4{
-    color: #fcfc;
+    color: #fcfcfc;
     letter-spacing: 2px;
     font-size: 20px;
 }
-.newsletter form{
+.newsletter{
     width: 380px;
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
 }
-
-.newsletter form:hover{
-    transform: scale(1.1);
-    
-}
-
 .newsletter form input:first-child{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px soild #f9004d;
+    border: 2px solid #f9004d;
     outline: none;
     border-radius: 30px;
 }
-
 .newsletter form input:last-child{
     position: absolute;
     display: inline-block;
@@ -130,59 +110,52 @@ h4{
     border-radius: 30px;
     background-color: #f9004d;
     color: white;
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    box-shadow: 0px 0px 5px 000, 0px 0px 15px #858585;
     top: 6px;
     right: 6px;
-
 }
 .about{
     width: 100%;
     padding: 100px 0px;
     background-color: #191919;
-    
-}
 
+} 
 .about img{
     height: auto;
     width: 430px;
+    border-radius:  0 25px;
 }
-
 .about-text{
     width: 550px;
 }
-
 .main{
-    width: 1130px;
+    width:1130px;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
 .about-text h2{
     color: white;
-    font-size: 75px;
+    font-size: 78px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-
 .about-text h5{
     color: white;
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 21px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
-
-.about-text p{
+.about-text p {
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
-
 button{
     background-color: #f9004d;
     color: white;
@@ -191,23 +164,19 @@ button{
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
-    transition: .4s;
+    transition:  .4s;
 }
-
 button:hover{
-    transform: scale(1.2);
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
-
 }
 
 .service{
-    background-color: #181818;
+    background: #101010;
     width: 100%;
     padding: 100px 0px;
 }
-
 .title h2{
     color: white;
     font-size: 75px;
@@ -215,17 +184,15 @@ button:hover{
     margin: 30px auto;
     text-align: center;
 }
-
 .box{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 400p;
 }
-
 .card{
     height: 365px;
-    width: 335px;
+    width: 365px;
     padding: 20px 35px;
     background: #191919;
     border-radius: 20px;
@@ -235,64 +202,26 @@ button:hover{
     text-align: center;
 
 }
-
 .card i{
-    font-size: 50px;
+    font: 500px;
     display: block;
     text-align: center;
     margin: 25px 0px;
     color: #f9004d;
 }
-
 h5{
     color: white;
     font-size: 23px;
     margin-bottom: 15px;
-}
 
+}
 .pra p{
     color: #fcfc;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
-
-.card .button{
-    background-color: #f9004d;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 9px 22px;
-    border-radius: 30px;
-    transition: .4s;
-}
-
-.card .button:hover{
-    transform: scale(1.2);
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-}
-
-.contact-me{
-    width: 100%;
-    height: 290px;
-    align-items: center;
-    background: #191919;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contact-me p{
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
-.contact-me .button-two{
+.card  .button{
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -300,16 +229,43 @@ h5{
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
-    transition: .4s;
+    transition:  .4s;
 }
-
-.contact-me .button-two:hover{
-    transform: scale(1.2);
+.card .button:hover{
     background-color: transparent;
     border: 2px solid #f9004d;
-    cursor: pointer;
+    cursor:pointer;
 }
-
+.cantact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center ;
+}
+.cantact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.cantact-me .button-two{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition:  .4s;
+}
+.cantact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor:pointer;
+}
 footer{
     position: relative;
     width: 100%;
@@ -320,14 +276,12 @@ footer{
     align-items: center;
     justify-content: center;
 }
-
 footer p:nth-child(1){
     font-size: 30px;
     color: white;
-    margin-bottom: 28px;
-    font-weight: bold;   
+    margin-bottom: 20px;
+    font-weight: bold;
 }
-
 footer p:nth-child(2){
     color: white;
     font-size: 17px;
@@ -335,11 +289,10 @@ footer p:nth-child(2){
     text-align: center;
     line-height: 26px;
 }
-
 .social{
     display: flex;
-}
 
+}
 .social a{
     width: 45px;
     height: 45px;
@@ -353,159 +306,59 @@ footer p:nth-child(2){
     text-decoration: none;
     font-size: 20px;
 }
-
 .social a:hover{
     transform: scale(1.3);
     transition: .3s;
 }
-
 .end{
     position: absolute;
     color: #f9004d;
     bottom: 35px;
-    font-size: 14px; 
-}
+    font-size: 14px;
+}  
 
-
-
-
-
-
-@media only screen and (max-width:288px){
-    *{
-        padding: 0;
-        margin: 0;
-        font-family: 'josefin Sans', sans-serif;
-        box-sizing: border-box;
-        
-    }
+@media screen and (max-width:760px){
     .hero{
-        height: 100vh;
-        width: 288px;
-        background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./didi.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-
-    section{
-        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./didi.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        width: 288px;
-        padding-right: 50px;
-        position: relative;
-    }
-
-
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 29px;
-        padding-left: 2%;
-        padding-right: 2%; 
-    }
-
-
-    .logo{
-        color: white;
-        font-size: 10px;
-        letter-spacing: 1px;
-        cursor: pointer;
-    
-    }
-
-
-
-    nav ul li{
-        list-style-type: none;
-        display: inline;
-        padding: 1px 1px;
-    }
-    
-    nav ul li a{
-        color: white;
-        text-decoration: red;
-        font-weight: bold;
-        text-transform: capitalize;
-        font-size: 6px;
-    }
-    
-    nav ul li a:hover{
-        color: palevioletred;
-        transition: .4s;
-    }
-
-   
-
-
-
-    .btn{
-        background-color: #f9004d;
-        color: white;
-        text-decoration: wavy;
-        border: 1px solid transparent;
-        border-radius: 30px;
-        font-weight: bold;
-        padding: 3px 1px;
-        text-transform: capitalize;
-        transition: transform .10s;
-        font-size: 9px;
-    }
-    
-    .btn:hover{
-        transform: scale(1.2);
-        
-    }
-    
-
-
-    .content{
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        transform: translateY(-50%);
-    }
-    
-    h1{
-        color: white;
-        margin: 30px 0px 30px;
-        font-size: 29px;
-    }
-    
-    h3{
-        color: white;
-        font-size: 10px;
-        margin-bottom: 25px;
-    }
-    
-    h4{
-        color: #fcfc;
-        letter-spacing: 9px;
-        font-size: 14px;
-    }
-    .newsletter form{
-        width: 200px;
-        max-width: 1000px;
-        position: relative;
-    }
-    
-    .newsletter form:hover{
-        transform: scale(1.1);
-        
-    }
-    
-    .newsletter form input:first-child{
-        display: inline-block;
         width: 100%;
-        padding: 14px 130px 14px 15px;
-        border: 2px soild #f9004d;
-        outline: none;
-        border-radius: 30px;
+        height: 80vh;
     }
-    
+    nav{
+        padding-top: 10px;
+    }
+    nav ul li{
+        display: none;
+        padding: 10px 25px;
+    }
+    /* to push the subscribe btn to the right edge */
+    nav #subscribe {
+        display: block;
+        margin-left: auto;
+    }
+    .logo{
+        font-size: 15px;
+        letter-spacing: none;
+    }
+    .btn{
+        padding: 5px 15px;
+    }
+    .fa-solid  {
+        color: white;
+        font-size: 30px;
+    }
+
+    /* edited content to fit into mobile screen */
+    .content{
+     width: 90% !important;
+     position: absolute;
+     top: 45%;
+     margin-left: 20px;
+    }
+
+    /* edited the newsletter form and button to fit into mobile screen */
+    .newsletter #mail {
+        width: 90% !important;
+    }
+
     .newsletter form input:last-child{
         position: absolute;
         display: inline-block;
@@ -515,250 +368,82 @@ footer p:nth-child(2){
         border-radius: 30px;
         background-color: #f9004d;
         color: white;
-        box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+        box-shadow: 0px 0px 5px 000, 0px 0px 15px #858585;
         top: 6px;
-        right: 6px;
-    
+        right: 40px;
     }
-    .about{
-        width: 288px;
-        padding: 100px 0px;
-        background-color: #191919;
-        
-    }
-    
-    .about img{
-        height: 200px 200px;
-        width: 130px;
-        padding-right: 10px;
-    }
-    
-    .about-text{
-        width: 1000px;
-    }
-    
-    .main{
-        width: 1130px;
-        max-width: 95%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    .about-text h2{
-        color: white;
-        font-size: 15px;
-        text-transform: capitalize;
-        margin-bottom: 5px;
-    }
-    
-    .about-text h5{
-        color: white;
-        letter-spacing: 0px;
-        font-size: 8px;
-        margin-bottom: 10px;
-        text-transform: capitalize;
-    }
-    
-    .about-text p{
-        color: #fcfc;
-        letter-spacing: 0px;
-        line-height: 20px;
-        font-size: 6px;
-        margin-bottom: 45px;
-        font-weight: bold;
-    }
-    
-    button{
-        background-color: #f9004d;
-        color: white;
-        text-decoration: none;
-        border: 1px solid transparent;
-        font-weight: bold;
-        padding: 8px 10px;
-        border-radius: 30px;
-        transition: .4s;
-    }
-    
-    button:hover{
-        transform: scale(1.2);
-        background-color: transparent;
-        border: 2px solid #f9004d;
-        cursor: pointer;
-    
-    }
-    
-    .service{
-        background-color: #181818;
-        width: 288px;
-        padding: 100px 0px;
-    }
-    
-    .title h2{
-        color: white;
-        font-size: 20px;
-        width: 150px;
-        margin: 30px auto;
-        text-align: center;
-    }
-    
-    .box{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100px;
-        min-width: 150px;
-       
-    }
-    
-    .card{
-        height: 300px;
-        width: 335px;
-        padding: 20px 35px;
-        background: #191919;
-        border-radius: 20px;
-        margin: 6px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-    
-    }
-    
-    .card i{
+
+    h1{
+        margin:15px 0px 15px ;
         font-size: 25px;
-        display: block;
-        text-align: center;
-        margin: 20px 0px;
-        color: #f9004d;
     }
-    
-    h5{
-        color: white;
-        font-size: 10px;
-        margin-bottom: 15px;
+    h3{
+        margin-bottom: 45px ;
+        font-size: 15px;
     }
-    
-    .pra p{
-        color: #fcfc;
-        font-size: 5px;
-        line-height: 9px;
-        margin-bottom: 40px;
-        
-        
-    }
-
-
-    .card .button{
-        background-color: #f9004d;
-        color: white;
-        text-decoration: none;
-        border: 1px solid transparent;
-        font-weight: 100;
-        padding: 1px 10px;
-        border-radius: 10px;
-        transition: .4s;
-        
-    }
-    
-    .card .button:hover{
-        transform: scale(1.2);
-        background-color: transparent;
-        border: 2px solid #f9004d;
-        cursor: pointer;
-    }
-    
-    .contact-me{
-        width: 288px;
-        height: 300px;
-        align-items: center;
-        background: #191919;
-        display: flex;
+    .main{
         flex-direction: column;
-        justify-content: center;
     }
-    
-    .contact-me p{
-        color: white;
-        font-size: 10px;
-        font-weight: 800;
+   .about{
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .about img{
+        width: 330px;
+        margin-top: 80px;
+    }
+    .about-text h2{
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .about-text h5{
+        font-size: 15px;
         margin-bottom: 25px;
-        
-        
-    }
-    
-    .contact-me .button-two{
-        background-color: #f9004d;
-        color: white;
-        text-decoration: none;
-        border: 2px solid transparent;
-        font-weight: 300;
-        padding: 5px 17px;
-        border-radius: 40px;
-        transition: .4s;
-    }
-    
-    .contact-me .button-two:hover{
-        transform: scale(1.2);
-        background-color: transparent;
-        border: 2px solid #f9004d;
-        cursor: pointer;
-    }
-    
-    footer{
-        position: relative;
-        width: 288px;
-        height: 400px;
-        background: #101010;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    footer p:nth-child(1){
-        font-size: 27px;
-        color: #f9004d;
-        margin-bottom: 28px;
-        font-weight: bold;   
-    }
-    
-    footer p:nth-child(2){
-        color: white;
-        font-size: 6px;
-        width: 400px;
         text-align: center;
-        line-height: 26px;
-        letter-spacing: 0px;
+    }
+
+    /* edited paragraph to not overflow on mobile */
+    .about-text p {
+        display: block;
+        width: 60% !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    button{
+        text-align: center;
+        margin-left: 220px;
+        margin-right: 90px;
+        margin-bottom: 20px;
+    }
+    .service{
+        width: 100%;
+    }
+    .box{
+        flex-direction: column;
+    }
+
+    /* edited the title h2 to properly center on mobile screen */
+    .title h2{
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 38px;
+    }
+    .card{
+        width: 80%;
+    }
+    .cantact-me{
+        width: 100%;
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     
-    .social{
-        display: flex;
-    }
-    
-    .social a{
-        width: 45px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: white;
-        border-radius: 50%;
-        margin: 22px 10px;
-        color: #f9004d;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    
-    .social a:hover{
-        transform: scale(1.3);
-        transition: .3s;
-    }
-    
-    .end{
-        position: absolute;
-        color: #f9004d;
-        bottom: 35px;
-        font-size: 10px; 
-    }
 }
